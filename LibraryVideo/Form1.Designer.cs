@@ -30,22 +30,22 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxInstagram = new System.Windows.Forms.PictureBox();
+            this.pictureBoxFacebook = new System.Windows.Forms.PictureBox();
+            this.pictureBoxYouTube = new System.Windows.Forms.PictureBox();
             this.btnClose = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxInstagram)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFacebook)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxYouTube)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -58,27 +58,30 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox1
+            // txtUsername
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(55)))));
-            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox1.Location = new System.Drawing.Point(115, 148);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(159, 27);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "Username";
+            this.txtUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(55)))));
+            this.txtUsername.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsername.ForeColor = System.Drawing.SystemColors.Window;
+            this.txtUsername.Location = new System.Drawing.Point(115, 148);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(159, 27);
+            this.txtUsername.TabIndex = 1;
+            this.txtUsername.Text = "Username";
+            this.txtUsername.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtUsername_MouseClick);
+            this.txtUsername.MouseEnter += new System.EventHandler(this.txtUsername_MouseEnter);
             // 
-            // textBox2
+            // txtPassword
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(55)))));
-            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox2.Location = new System.Drawing.Point(115, 216);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(159, 27);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.Text = "Password";
+            this.txtPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(55)))));
+            this.txtPassword.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.ForeColor = System.Drawing.SystemColors.Window;
+            this.txtPassword.Location = new System.Drawing.Point(115, 216);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(159, 27);
+            this.txtPassword.TabIndex = 2;
+            this.txtPassword.Text = "Password";
+            this.txtPassword.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtPassword_MouseClick);
             // 
             // pictureBox2
             // 
@@ -124,35 +127,38 @@
             this.button2.Text = "Sing up";
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // pictureBox5
+            // pictureBoxInstagram
             // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(73, 402);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(39, 39);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 8;
-            this.pictureBox5.TabStop = false;
+            this.pictureBoxInstagram.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxInstagram.Image")));
+            this.pictureBoxInstagram.Location = new System.Drawing.Point(73, 402);
+            this.pictureBoxInstagram.Name = "pictureBoxInstagram";
+            this.pictureBoxInstagram.Size = new System.Drawing.Size(39, 39);
+            this.pictureBoxInstagram.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxInstagram.TabIndex = 8;
+            this.pictureBoxInstagram.TabStop = false;
+            this.pictureBoxInstagram.Click += new System.EventHandler(this.pictureBoxInstagram_Click);
             // 
-            // pictureBox4
+            // pictureBoxFacebook
             // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(154, 402);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(39, 39);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 9;
-            this.pictureBox4.TabStop = false;
+            this.pictureBoxFacebook.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxFacebook.Image")));
+            this.pictureBoxFacebook.Location = new System.Drawing.Point(154, 402);
+            this.pictureBoxFacebook.Name = "pictureBoxFacebook";
+            this.pictureBoxFacebook.Size = new System.Drawing.Size(39, 39);
+            this.pictureBoxFacebook.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxFacebook.TabIndex = 9;
+            this.pictureBoxFacebook.TabStop = false;
+            this.pictureBoxFacebook.Click += new System.EventHandler(this.pictureBoxFacebook_Click);
             // 
-            // pictureBox6
+            // pictureBoxYouTube
             // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(235, 402);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(39, 39);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 10;
-            this.pictureBox6.TabStop = false;
+            this.pictureBoxYouTube.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxYouTube.Image")));
+            this.pictureBoxYouTube.Location = new System.Drawing.Point(235, 402);
+            this.pictureBoxYouTube.Name = "pictureBoxYouTube";
+            this.pictureBoxYouTube.Size = new System.Drawing.Size(39, 39);
+            this.pictureBoxYouTube.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxYouTube.TabIndex = 10;
+            this.pictureBoxYouTube.TabStop = false;
+            this.pictureBoxYouTube.Click += new System.EventHandler(this.pictureBoxYouTube_Click);
             // 
             // btnClose
             // 
@@ -175,15 +181,15 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(55)))));
             this.ClientSize = new System.Drawing.Size(331, 453);
             this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.pictureBoxYouTube);
+            this.Controls.Add(this.pictureBoxFacebook);
+            this.Controls.Add(this.pictureBoxInstagram);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
@@ -192,9 +198,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxInstagram)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFacebook)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxYouTube)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -203,15 +209,15 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBoxInstagram;
+        private System.Windows.Forms.PictureBox pictureBoxFacebook;
+        private System.Windows.Forms.PictureBox pictureBoxYouTube;
         private System.Windows.Forms.Button btnClose;
     }
 }
