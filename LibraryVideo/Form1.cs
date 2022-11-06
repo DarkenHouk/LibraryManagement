@@ -9,7 +9,7 @@ namespace LibraryVideo
             InitializeComponent();
         }
 
-        private void button3_Click(object sender, System.EventArgs e)
+        private void btnClose_Click(object sender, System.EventArgs e)
         {
             this.Close();
         }
