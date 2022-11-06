@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System.Data.SqlClient;
+using System.Windows.Forms;
 
 namespace LibraryVideo
 {
@@ -49,6 +50,11 @@ namespace LibraryVideo
         private void pictureBoxFacebook_Click(object sender, System.EventArgs e)
         {
             System.Diagnostics.Process.Start("https://www.facebook.com/ilon.mask.357284");
+        }
+
+        private void btnLogin_Click(object sender, System.EventArgs e)
+        {
+            SqlConnection con = new SqlConnection();
         }
     }
 }
